@@ -54,9 +54,7 @@ app.get('/',function(req,res){
 });
 
 
-
-
-
-app.listen(3000, ()=>{//Part#1 Point 5
-    console.log("Server Ready on 3000");
+const PORT = process.env.PORT || 3000;//Part#1 Point 5
+app.listen(PORT,()=>{
+    console.log("Server Ready on"+PORT);
 });
